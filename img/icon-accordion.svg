@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon-accordion</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accordion-cards---Desktop" transform="translate(-401.000000, -469.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(192.000000, 124.000000)">
+                <g id="Expand" transform="translate(189.000000, 325.000000)">
+                    <path d="M47.0666667,33.0666667 L34.9333333,33.0666667 L34.9333333,20.9333333 C34.9333333,20.419272 34.5140613,20 34,20 C33.4859387,20 33.0666667,20.419272 33.0666667,20.9333333 L33.0666667,33.0666667 L20.9333333,33.0666667 C20.419272,33.0666667 20,33.4859387 20,34 C20,34.5140613 20.419272,34.9333333 20.9333333,34.9333333 L33.0666667,34.9333333 L33.0666667,47.0666667 C33.0666667,47.580728 33.4859387,48 34,48 C34.5140613,48 34.9333333,47.580728 34.9333333,47.0666667 L34.9333333,34.9333333 L47.0666667,34.9333333 C47.580728,34.9333333 48,34.5140613 48,34 C48,33.4859387 47.580728,33.0666667 47.0666667,33.0666667 Z" id="icon-accordion"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

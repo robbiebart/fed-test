@@ -1,0 +1,131 @@
+/* || GENERAL STYLES */
+
+html {
+  font-family: "Roboto", sans-serif;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: url("img/fixed-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+}
+
+/* || CARD STYLES */
+.card {
+  width: 314px;
+  height: min-content;
+  margin-top: 40px;
+  margin-bottom: 2rem;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 2px 12px 0 rgba(56, 8, 50, 0.24);
+  border-radius: 10px;
+  padding-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #2b2624;
+  line-height: 28px;
+
+  text-align: left;
+}
+
+.card .headshot {
+  border-radius: 50%;
+  margin: 40px 0 0 0;
+  min-height: 123px;
+}
+
+.card .title {
+  padding: 20px 20px 0 20px;
+  margin-bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+/* The card default state is hidden */
+.card .copy {
+  display: none;
+  padding: 20px;
+}
+
+.toggle {
+  transition: absolute;
+  position: absolute;
+  bottom: -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  background-color: #73bdb2;
+  box-shadow: 0 2px 12px 0 rgba(56, 8, 50, 0.24);
+  color: white;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion {
+  height: 40%;
+}
+
+/* || UTILITIES  */
+
+/* On open, card displays block and padding bottom is removed */
+.card.open {
+  padding-bottom: 0px;
+}
+
+.card.open .copy {
+  display: block;
+}
+
+/* When toggle is active, it rotates 45 degrees */
+.toggle.active {
+  transform: rotate(-45deg);
+  /* transition: transform 0.5s; */
+}
+
+@media (min-width: 1024px) {
+  /* After 1024 px breakpoint:
+  change background positioning, 
+  change flex direction rules to display cards side by side */
+  body {
+    background-position: center center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /* resize assets to fit the desktop version of mockup */
+  .card {
+    margin-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .card .headshot {
+    min-height: 163px;
+  }
+
+  .toggle {
+    height: 68px;
+    width: 68px;
+    bottom: -34px;
+  }
+}
