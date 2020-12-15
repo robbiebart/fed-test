@@ -70,7 +70,6 @@ body {
 }
 
 .toggle {
-  transition: transform 0.5s;
   position: absolute;
   bottom: -25px;
   height: 50px;
@@ -89,7 +88,7 @@ body {
 
 .toggle:hover {
   cursor: pointer;
-  animation: pulse 1s;
+  animation: pulse 1s infinite;
   animation-timing-function: linear;
 }
 
@@ -107,6 +106,7 @@ body {
 
 .accordion {
   height: 40%;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* || UTILITIES  */
@@ -123,7 +123,6 @@ body {
 /* When toggle is active, it rotates 45 degrees */
 .active .accordion {
   transform: rotate(-45deg);
-  transition-duration: 0.5s;
 }
 
 @media (min-width: 1024px) {
