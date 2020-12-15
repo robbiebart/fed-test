@@ -65,7 +65,7 @@ body {
 .card .copy {
   height: 0;
   overflow: hidden;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.5s ease-in-out;
   padding: 0 20px;
 }
 
@@ -87,6 +87,24 @@ body {
   justify-content: center;
 }
 
+.toggle:hover {
+  cursor: pointer;
+  animation: pulse 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .accordion {
   height: 40%;
 }
@@ -103,8 +121,9 @@ body {
 }
 
 /* When toggle is active, it rotates 45 degrees */
-.toggle.active {
+.active .accordion {
   transform: rotate(-45deg);
+  transition-duration: 0.5s;
 }
 
 @media (min-width: 1024px) {
