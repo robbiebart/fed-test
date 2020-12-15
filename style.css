@@ -49,11 +49,16 @@ body {
   min-height: 123px;
 }
 
-.card .title {
+.card .title-isabelle,
+.title-rodney {
   padding: 20px 20px 0 20px;
   margin-bottom: 0px;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+}
+
+.card .title-cornelia {
+  display: none;
 }
 
 /* The card default state is hidden */
@@ -122,6 +127,18 @@ body {
 
   .card .headshot {
     min-height: 163px;
+  }
+
+  .card .title-isabelle {
+    display: none;
+  }
+
+  .card .title-cornelia {
+    display: block;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
   }
 
   .toggle {
